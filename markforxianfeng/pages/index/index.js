@@ -7,7 +7,7 @@ Page({
     showMalfunctionView: true,
     showOrderView: false,
     showCorporationView: false,
-    date: '2015-2-31',
+    date: '2015-2-33',
     topFuncitons:[
       {
         "title":"故障报修",
