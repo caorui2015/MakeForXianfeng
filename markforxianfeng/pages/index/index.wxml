@@ -1,0 +1,65 @@
+<!--index.wxml-->
+<view class="container">
+  <view class='topView'>
+    <view class='itemButton' wx:for="{{topFuncitons}}"  id='{{item.id}}' catchtap='tapTopViewAction'>
+      <image src='{{item.image}}' class='itemImage'></image>
+      <text class='itemText'>{{item.title}}</text>
+    </view>
+  </view>
+  
+  <view class='bottonView'>
+    <form class='formDescription' wx:if="{{showMalfunctionView == true}}">
+      <view class='formItem'>
+       <label id=''>故障类型：</label>
+       <radio-group>
+          <label wx:for="{{radioOptins}}" wx:for-item="radio">
+            <radio value='{{radio.title}}' checked='{{radio.isSelected}}'/>{{radio.title}}
+          </label>
+       </radio-group>
+      </view>
+
+      <view class='formItem'>
+        <label>故障地点：</label>
+        <input placeholder='输入故障地点' placeholder-class="inputPlaceholderClass"></input>
+      </view>
+
+      <view class='formItem'>
+        <label>现象描述：</label>
+        <input placeholder='请描述故障' placeholder-class="inputPlaceholderClass">断电</input>
+      </view>
+
+      <view class='formItem'>
+        <label>发生时间：</label>
+        <picker mode="date" value="{{date}}" start="2015-09-01" end="2017-09-01" bindchange="bindDateChange" >
+    <view class="picker">
+      {{date}}
+    </view>
+  </picker>
+      </view>
+
+      <view class='formItem'>
+        <label>联 系 人 ：</label>
+        <input placeholder='填写联系人' placeholder-class="inputPlaceholderClass">曹瑞</input>
+      </view>
+
+      <view class='formItem'>
+        <label>联系号码：</label>
+        <input placeholder='填写联系号码' type='number' placeholder-class="inputPlaceholderClass">13155463802</input>
+      </view>
+
+      <view>
+        <button>提交</button>
+      </view>
+    </form>
+
+ 
+    <view class='orderList' wx:if="{{showOrderView == true}}">
+      <view wx:for="{{orderList}}" wx:for-item="order" class='order'>
+        <text class='orderTitle'>{{order.title}}</text>
+        <text class='orderTime'>{{order.time}}</text>
+        <text>{{order.state}}</text> 
+      </view> 
+    </view>  
+  </view>
+
+</view>

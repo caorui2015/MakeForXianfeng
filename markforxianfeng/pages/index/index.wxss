@@ -1,0 +1,125 @@
+/**index.wxss**/
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  padding: 0px;
+  background-color: #8a8a8a;
+}
+
+
+/**
+** topView
+**/
+.topView {
+  display: flex;
+  width: 100%;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: flex-start;
+  flex-wrap: nowrap;
+  padding-top: 5px;
+  padding-left: 5px;
+  padding-right: 5px;
+  background-color: white;
+}
+
+.itemButton {
+  display: flex;
+  width: 100%;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: center;
+  background-color: white;
+  border-color: white
+}
+
+.itemImage {
+  width: 32px;
+  height: 32px;
+}
+
+.itemText {
+  font-size: 15px;
+  line-height: 18px;
+}
+
+
+/**
+** bottomView
+**/
+.bottonView {
+  display: flex;
+  width: 100%;
+  margin-top: 10px;
+  flex-direction: column;
+  background-color: white;
+}
+
+.inputPlaceholderClass {
+  font-size: 14px;
+  
+}
+/**
+** 故障描述
+**/
+.formDescription {
+  display: flex;
+  margin: 8px;
+  border-color: black;
+  border-style: solid;
+  border-width: 1px;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  justify-content: space-around;
+  font-size: 16px;
+}
+
+.formItem {
+  display: flex;
+  width: 100%;
+  padding: 2px 8px 2px 8px;
+  flex-direction: row;  
+  flex-wrap: nowrap;
+  /* justify-content: space-around;  */
+  /* background-color: greenyellow; */
+}
+
+
+/**
+** 订单
+**/
+.orderList {
+  display: flex;
+  width: 100%;
+  padding: 2px 2% 2px 2%;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  justify-content: flex-start;
+  align-items: flex-start;
+  align-content: stretch;
+}
+
+.order {
+  display: flex;
+  width: 96%;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.order text {
+  font-size: 16px;
+  max-width: 20%;
+}
+
+text.orderTime {
+  flex-flow: 2;
+  min-width: 36%;
+}
+
+text.orderTitle {
+  max-width: 40%;
+}

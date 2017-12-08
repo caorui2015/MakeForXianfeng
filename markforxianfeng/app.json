@@ -1,0 +1,38 @@
+{
+  "pages":[
+    "pages/index/index",
+    "pages/order/order",
+    "pages/person/person"
+  ],
+  "window":{
+    "backgroundTextStyle":"light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "为了部落",
+    "navigationBarTextStyle":"black"
+  },
+  "tabBar" :{
+    "color":"#a9b7b7",
+    "selectedColor":"#11cd6e",
+    "borderStyle":"white",
+    "list":[
+      {
+        "selectedIconPath":"images/home-s.png",
+        "iconPath":"images/home.png",
+        "pagePath":"pages/index/index",
+        "text":"首页"
+     },
+     {
+       "selectedIconPath": "images/order-s.png",
+       "iconPath": "images/order.png",
+       "pagePath": "pages/order/order",
+       "text": "第二页"
+     },
+      {
+       "selectedIconPath": "images/person-s.png",
+       "iconPath": "images/person.png",
+       "pagePath": "pages/person/person",
+       "text": "第三页"
+      }
+    ]
+  }
+}
